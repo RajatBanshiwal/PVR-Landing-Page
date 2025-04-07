@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PVR Cinemas</title>
+<link rel="icon"  type="" href="https://i0.wp.com/orissadiary.com/wp-content/uploads/2021/02/PVR.jpg?fit=400%2C400&ssl=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <div id="bg-white">
+    <div class="nav-prt1">
+    <span><img src="https://www.pvrcinemas.com/static/media/pvr-logo.8d413a0b52b7bfb9edec295ce860e93d.svg" alt="PVR Logo" class="logos-pvr"></span>
+    <div class="navprt-2">
+    <ul>
+    <li><div class="navicons">
+    <img src="images/home.svg" alt="" class="img-fluid"></div>
+    <div class="useful-link">Home</div></li>
+    <li><div class="navicons">
+    <img src="images/showtiming.svg" alt="" class="img-fluid"></div>
+    <div class="useful-link">Showtimings</div></li>
+    <li><div class="navicons">
+    <img src="images/cinemas.svg" alt="" class="img-fluid"></div>
+    <div class="useful-link">Cinemas</div></li>
+    <li><div class="navicons">
+    <img src="images/offers.svg" alt="" class="img-fluid"></div>
+    <div class="useful-link">Offers</div></li>
+    <li><div class="navicons">
+    <img src="images/passports.svg" alt="" class="img-fluid"></div>
+    <div class="useful-link">Passports</div></li>
+    <li onclick="f()"><div class="navicons">
+    <img src="https://www.pvrcinemas.com/static/media/menubar.4007478a6a0c5caf8cc9f7f3e6cbbf15.svg" alt="" class="img-fluid"></div>
+    <div class="useful-link">More </div>
+    <ul class="drop-down">
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Privilege Plus</a></li>
+      <li><a href="">Experience</a></li>
+      <li><a href="">FAQs</a></li>
+      <li><a href="">Feedback</a></li>
+    </ul>
+</li>
+    </ul>
+    </div>
+    </div>
+    <div class="nav-prt3">
+      <div class="search"><img src="images/search.svg" alt=""></div>
+      <div class="location"><div class="icon"><img src="images/location.svg" alt=""></div>
+        <div class="text">Location</div><div class="arrow"><img src="images/arrow-more.svg" alt=""></div>
+    </div>
+      <div class="login"><div class="login-img"><img src="images/login.svg" alt=""></div><div class="login-text">Login</div>
+    </div>
+   
+  </div>
+    
+</div>
+<!-------------Image carousel--------------->
+ <div class="space-box"></div>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+  <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/banners/Easydine%20Offer_Collates_Web%20banner_47950_ndxggmxh.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+  <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/banners/PVR%20Nostalgic%20Show_Sahib%20Bibi%20Aur%20Ghulam_Web%20banner_20653_kBzUmkPY.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+  <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/banners/School%20Excursions_IMAX_Jul241_Web%20banner_8932_0RfghrMd.jpg" style="width:100%">
+  </div>
+  
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+<!-------------Image carousel end--------------->
+<div id="navbar2">
+      <div class="bar">
+      <div class="quick-book"><p>Quick Book</p></div>
+      <div class="date-show">
+      <span class="filter-pvr-active">Movie</span>
+      <span class="cinemas-inactive">Cinema</span>
+      </div>
+      <div id="selectField">
+        <p id="selectText">select Movie</p>
+      </div>
+      <ul id="list" class="hide">
+        <li class="options"><p>KALKI 2898 AD</p></li>
+        <li class="options"><p>KILL</p></li>
+        <li class="options"><p>SAFIRA</p></li>
+        <li class="options"><p>BHAIAY JI</p></li>
+        <li class="options"><p>INDIAN 2</p></li>
+        <li class="options"><p>MUNJYA</p></li>
+        <li class="options"><p>CHANDU CHAMPION</p></li>
+        <li class="options"><p>TRAILER SCREENING SHOW</p></li>
+      </ul>
+
+      <!------selectdate----->
+      <div id="selectField1">
+        <p id="selectDate">select Date</p>
+      </div>
+      <ul id="listDate" class="hide">
+        <li class="optionsDate"><p>Tomorrow, 12 Jul</p></li>
+        <li class="optionsDate"><p>Sat, 13 Jul</p></li>
+        <li class="optionsDate"><p>Sun, 14 Jul</p></li>
+        <li class="optionsDate"><p>Mon, 15 Jul</p></li>
+      </ul>
+      
+
+      <!------selectcinema----->
+      <div id="selectField2">
+        <p id="selectCinema">select Cinema</p>
+      </div>
+      <ul id="listCinema" class="hide">
+        <li class="optionsCinema"><p>PVR Ajmer Mittal</p></li>
+        <li class="optionsCinema"><p>INOX City Square Mall, Panchsheel Nagar Ajmer</p></li>
+        <li class="optionsCinema"><p>PVR Maya Mandir Ajmer</p></li>
+      </ul>
+
+      <!------selectTiming----->
+      <div id="selectField3">
+        <p id="selectTiming">select Timing</p>
+      </div>
+      <ul id="listTiming" class="hide">
+        <li class="optionsTime"><p>09:15 AM <span class="dot-c"></span>Hindi</p></li>
+        <li class="optionsTime"><p>10:45 AM <span class="dot-c"></span>Hindi</p></li>
+        <li class="optionsTime"><p>03:55 PM <span class="dot-c"></span>Hindi</p></li>
+        <li class="optionsTime"><p>10:35 PM <span class="dot-c"></span>Hindi</p></li>
+      </ul>
+
+        <input type="submit" class="book-btn" value="Book">
+      </div>
+</div>
+<div id="navbar3">
+  <div class="bar3">
+    <div class="section-box">
+      <a href=".nowshowing h3"><div>Now Showing</div></a>
+      <a href="comingh3"><div>Coming Soon</div></a>
+      <a href="#experience"><div>Experiences</div></a>
+      <a href=""><div>Trailers</div></a>
+      <a href=""><div>Offers</div></a>
+    </div>
+  </div>
+</div>
+<div id="homepage">
+  <div class="nowshowing">
+    <h3>Now Showing</h3>
+    <div class="nowshowing-right">
+      <div class="subtitle">
+        <input type="checkbox" class="checksub">
+        <label>With Subtitle</label>
+      </div>
+      <div class="all">
+          <select>
+            <option>All Genres</option>
+            <option>Action</option>
+            <option>Sci-Fi</option>
+            <option>Drama</option>
+            <option>Horror</option>
+            <option>Biography</option>
+            <option>Thriller</option>
+            <option>Comedy</option>
+            <option>Sports</option>
+            </select>
+            <select>
+              <option>All Language</option>
+              <option>English</option>
+              <option>Multiple</option>
+              <option>Hindi</option>
+              </select>
+      </div>
+    </div>
+    </div>
+    <div class="nowmoive">
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/29935_avJMVnzn.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text"> <div class="p-card-title">KILL
+        </div>
+        <div class="p-card-subtitle"><div>
+          <div class="movie-action-bread"><ul><li>U</li><li><span class="n-dots"></span>Action</li></ul></div>
+          <div class="lang-movie-type">
+            <span class="languages-now"> Hindi</span></div>
+          </div>
+          </div>
+         <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="book-tickets" value="Book Tickets"></a>
+          </div>
+          <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+         </div></div>
+      </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/29113_k8BTHv9Z.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text">
+        <div class="p-card-title">KALKI 2898 AD
+
+        </div>
+        <div class="p-card-subtitle"><div>
+          <div class="movie-action-bread"><ul><li>U/A </li><li><span class="n-dots"></span>Sci-Fi +1 more</li></ul></div>
+          <div class="lang-movie-type">
+            <span class="languages-now"> Hindi</span></div>
+          </div>
+          </div>
+         <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="book-tickets" value="Book Tickets"></a>
+          </div>
+          <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+         </div>
+      </div>
+    </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/29312_byxn1hEE.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text"> <div class="p-card-title">SARFIRA
+        </div>
+        <div class="p-card-subtitle"><div>
+          <div class="movie-action-bread"><ul><li>U</li><li><span class="n-dots"></span>Drama</li></ul></div>
+          <div class="lang-movie-type">
+            <span class="languages-now"> Hindi</span></div>
+          </div>
+          </div>
+         <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="book-tickets" value="Book Tickets"></a>
+          </div>
+          <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+         </div></div>
+        <div class="new-release">New Release</div>
+      </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/28585_Pllb6ZWj.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text">
+          <div class="p-card-title">MUNJYA</div>
+          <div class="p-card-subtitle"><div>
+            <div class="movie-action-bread"><ul><li>U/A </li><li><span class="n-dots"></span>Comedy +2 more</li></ul></div>
+            <div class="lang-movie-type">
+              <span class="languages-now"> Hindi</span></div>
+            </div>
+            </div>
+           <div class="p-card-footer">
+            <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+              <input type="submit" class="book-tickets" value="Book Tickets"></a>
+            </div>
+            <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+           </div>
+        </div>
+      </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/28512_g2gpPvXI.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text">
+          <div class="p-card-title">INDIAN 2</div>
+          <div class="p-card-subtitle"><div>
+            <div class="movie-action-bread"><ul><li>U/A </li><li><span class="n-dots"></span>Action</li></ul></div>
+            <div class="lang-movie-type">
+              <span class="languages-now"> Hindi</span></div>
+            </div>
+            </div>
+           <div class="p-card-footer">
+            <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+              <input type="submit" class="book-tickets" value="Book Tickets"></a>
+            </div>
+            <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+           </div>
+        </div>
+        <div class="new-release">New Release</div>
+      </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/28563_AIg0DHbk.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text">
+          <div class="p-card-title">DEADPOOL & WOLVERINE</div>
+          <div class="p-card-subtitle"><div>
+            <div class="movie-action-bread"><ul><li>A </li><li><span class="n-dots"></span>Action</li></ul></div>
+            <div class="lang-movie-type">
+              <span class="languages-now"> English,Hindi</span></div>
+            </div>
+            </div>
+           <div class="p-card-footer">
+            <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+              <input type="submit" class="book-tickets" value="Book Tickets"></a>
+            </div>
+            <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+           </div>
+        </div>
+        <div class="new-release">Releasing on Fri Jul 26</div>
+      </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/28553_1SgDvpUh.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text">
+          <div class="p-card-title">DEADPOOL & WOLVERINE</div>
+          <div class="p-card-subtitle"><div>
+            <div class="movie-action-bread"><ul><li>U/A </li><li><span class="n-dots"></span>Sports +1 more</li></ul></div>
+            <div class="lang-movie-type">
+              <span class="languages-now">Hindi</span></div>
+            </div>
+            </div>
+           <div class="p-card-footer">
+            <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+              <input type="submit" class="book-tickets" value="Book Tickets"></a>
+            </div>
+            <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+           </div>
+        </div>
+      </div>
+      <div class="now-moives">
+        <div class="p-card">
+          <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/26895_8UFH3T5j.jpg" alt="" width="234px" height="341.5pxpx">
+        </div>
+        <div class="p-text">
+          <div class="p-card-title">TRAILERS SCREENING SHO...</div>
+          <div class="p-card-subtitle"><div>
+            <div class="movie-action-bread"><ul><li> U/A </li><li><span class="n-dots"></span>Drama</li></ul></div>
+            <div class="lang-movie-type">
+              <span class="languages-now">Multiple</span></div>
+            </div>
+            </div>
+           <div class="p-card-footer">
+            <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+              <input type="submit" class="book-tickets" value="Book Tickets"></a>
+            </div>
+            <div class="i-box"><img width="64" height="64" src="https://img.icons8.com/pastel-glyph/64/info--v4.png" alt="info--v4"/></div>
+           </div>
+        </div>
+        <div class="new-release">Re Release</div>
+      </div>
+    </div>
+  </div>
+<div id="coming-soon">
+  <div id="coming">
+    <div class="comingsoon">
+      <div class="nowshowing comingh3">
+        <h3 id="comingh3">Coming Soon</h3>
+      </div>
+      <div class="coming-right">
+       <div class="gap-arrow">
+        <div class="left-arrow"><a href=""><img src="images/left-btn.png" alt="" class="left-btn"></a></div>
+        <div class="right-arrow"><a href=""><img src="images/right-btn.png" alt="" class="right-btn"></a></div>
+        <div class="seeall"><a href="">See all  <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="comingmoive">
+    <div class="now-moives">
+      <div class="p-card">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/28547_Z3BL5IlB.jpg" alt="" width="234px" height="341.5pxpx">
+      </div>
+      <div class="p-text"> <div class="p-card-title">TWISTERS</div>
+      <div class="p-card-subtitle1"><div>
+        <div><span>Action</span></div>
+        <div>English,Hindi</div>
+        <div><b>Releasing on Thu Jul 18</b></div>
+        </div>
+        </div>
+        <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="view-details" value="View Details"></a>
+          </div>
+          <div class="bell-plus"><img src="images/bell-icon.svg" alt="add to wishlist" ></div>
+        </div>
+      </div>
+    </div>
+    <div class="now-moives">
+      <div class="p-card">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/29644_8EPJjorB.jpg" alt="" width="234px" height="341.5pxpx">
+      </div>
+      <div class="p-text"> <div class="p-card-title">BAD NEWZ</div>
+      <div class="p-card-subtitle1"><div>
+        <div><span>Drama, Comedy</span></div>
+        <div>Hindi</div>
+        <div><b>Releasing on Fri Jul 19</b></div>
+        </div>
+        </div>
+        <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="view-details" value="View Details"></a>
+          </div>
+          <div class="bell-plus"><img src="images/bell-icon.svg" alt="add to wishlist" ></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="now-moives">
+      <div class="p-card">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/30538_8vcHYzOp.jpg" alt="" width="234px" height="341.5pxpx">
+      </div>
+      <div class="p-text"> <div class="p-card-title">SURJO</div>
+      <div class="p-card-subtitle1"><div>
+        <div><span>Romance</span></div>
+        <div>Bengali</div>
+        <div><b>Releasing on Fri Jul 19</b></div>
+        </div>
+        </div>
+        <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="view-details" value="View Details"></a>
+          </div>
+          <div class="bell-plus"><img src="images/bell-icon.svg" alt="add to wishlist" ></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="now-moives">
+      <div class="p-card">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/30027_RbjNBsYQ.jpg" alt="" width="234px" height="341.5pxpx">
+      </div>
+      <div class="p-text"> <div class="p-card-title">SPY X FAMILY CODE: WHI...</div>
+      <div class="p-card-subtitle1"><div>
+        <div><span>Anime, Action, Comedy</span></div>
+        <div>Japanese</div>
+        <div><b>Releasing on Fri Jul 19</b></div>
+        </div>
+        </div>
+        <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="view-details" value="View Details"></a>
+          </div>
+          <div class="bell-plus"><img src="images/bell-icon.svg" alt="add to wishlist" ></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="now-moives">
+      <div class="p-card">
+        <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/30700_z5O1LAVd.jpg" alt="" width="234px" height="341.5pxpx">
+      </div>
+      <div class="p-text"> <div class="p-card-title">PEKAMEDALU</div>
+      <div class="p-card-subtitle1"><div>
+        <div><span>Drama</span></div>
+        <div>Telugu</div>
+        <div><b>Releasing on Fri Jul 19</b></div>
+        </div>
+        </div>
+        <div class="p-card-footer">
+          <div class="book-details"><a href="https://www.pvrcinemas.com/moviesessions/Ajmer/KALKI%202898%20AD/29113">
+            <input type="submit" class="view-details" value="View Details"></a>
+          </div>
+          <div class="bell-plus"><img src="images/bell-icon.svg" alt="add to wishlist" ></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!------------------Experience-------------->
+<div id="experience">
+  <div id="Experience-page">
+    <div class="comingsoon">
+      <div class="nowshowing">
+        <h3>Experiences</h3>
+      </div>
+      <div class="coming-right">
+       <div class="gap-arrow">
+        <div class="left-arrow"><a href=""><img src="images/left-btn.png" alt="" class="left-btn"></a></div>
+        <div class="right-arrow"><a href=""><img src="images/right-btn.png" alt="" class="right-btn"></a></div>
+        <div class="seeall"><a href="https://www.inoxmovies.com/experience/Delhi-NCR">See all  <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="exp-box"><a href="https://www.pvrcinemas.com/experience/Delhi-NCR"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/exp_sqr/IMAX_OcRnyAxX.jpg" alt="PVR not found" ></a></div>
+    <div class="exp-box"><a href="https://www.pvrcinemas.com/experience/Delhi-NCR"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/exp_sqr/insignia_ofBpmI8F.jpg" alt="PVR not found" ></a></div>
+    <div class="exp-box"><a href="https://www.pvrcinemas.com/experience/Delhi-NCR"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/exp_sqr/4DX_ZriyhTHF.jpg" alt="PVR not found" ></a></div>
+    <div class="exp-box"><a href="https://www.inoxmovies.com/experience/Delhi-NCR"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/exp_sqr/luxe_ziZV9CDp.jpg" alt="PVR not found" ></a></div>
+  </div>
+</div>
+</div>
+<!------------------Trailers-------------->
+<div id="trailer">
+  <div id="trailer-page">
+    <div class="comingsoon">
+      <div class="nowshowing">
+        <h3>Trailers</h3>
+      </div>
+      <div class="all">
+        <select>
+          <option>All Language</option>
+          <option>English</option>
+          <option>Multiple</option>
+          <option>Hindi</option>
+          </select>
+      </div>
+    </div>
+    <div class="trailer-bg">
+      <div class="trailer-img"><img src="https://img.youtube.com/vi/uV50UfcIT68/0.jpg"  alt=""></div>
+    <div class="overlay"></div>   
+    <div class="trailer-text"><div class="text">
+      <div class="movie-name"><h1>BAD NEWZ</h1><ul><li>U/A</li><li><span class="dot-c"></span> 2h 22m</li><li><span class="dot-c"></span>Friday, Jul 19, 2024</li><li></li><li><span class="dot-c"></span>Drama,Comedy</li><li><span class="dot-c"></span>Hindi</li></ul>
+      </div>
+    </div>
+    <div class="play"><img src="images/PLAY.png" alt="" class="play-icon"></div>
+    <div class="both-click">
+    <button class="btn-left"><img src="images/left-btn.png" alt=""></button>
+    <button class="btn-right"><img src="images/right-btn.png" alt=""></button>
+</div>
+</div>
+<div class="galleria"></div>
+
+  </div>
+ 
+ 
+      </div>
+  </div>
+<!------------------offers-------------->
+<div id="offers">
+  <div id="offers-page">
+    <div class="comingsoon">
+      <div class="nowshowing">
+        <h3>Offers For You</h3>
+      </div>
+      <div class="coming-right">
+       <div class="gap-arrow">
+        <div class="left-arrow"><a href=""><img src="images/left-btn.png" alt="" class="left-btn"></a></div>
+        <div class="right-arrow"><a href=""><img src="images/right-btn.png" alt="" class="right-btn"></a></div>
+        <div class="seeall"><a href="https://www.inoxmovies.com/offers/Delhi-NCR">See all  <i class="fa-solid fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="offers-row">
+    <div class="offer-item">
+      <div class="offer-img"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/12793_N3FayHRV.jpg" alt=""></div>
+      <div class="offer-text">
+        <div class="offer-subtitle">
+        <span class="offer-head">UNLIMITED REFILL OFFER</span>
+      </div>
+      <div class="offer-footer"><span class="vail-date"><span class="text-muted">Valid till:</span> Mon, Sep 30, 2024</span>
+        <button class="view-btn">View</button>
+      </div>
+      </div>
+    </div>
+    <div class="offer-item">
+      <div class="offer-img"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/12090_vzafN5GW.jpg" alt=""></div>
+      <div class="offer-text">
+        <div class="offer-subtitle">
+        <span class="offer-head">IDBI Bank - 25% Off on Transactions</span>
+      </div>
+      <div class="offer-footer"><span class="vail-date"><span class="text-muted">Valid till:</span> Mon, Sep 30, 2024</span>
+        <button class="view-btn">View</button>
+      </div>
+      </div>
+    </div>
+    <div class="offer-item">
+      <div class="offer-img"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/12939_O94yLomw.jpg" alt=""></div>
+      <div class="offer-text">
+        <div class="offer-subtitle">
+        <span class="offer-head">Kotak Bank 25% off on all LUX and INSIGNIA Tickets</span>
+      </div>
+      <div class="offer-footer"><span class="vail-date"><span class="text-muted">Valid till:</span> Sat, Aug 31, 2024</span>
+        <button class="view-btn">View</button>
+      </div>
+      </div>
+    </div>
+    <div class="offer-item">
+      <div class="offer-img"><img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/12539_VdC93nnp.jpg" alt=""></div>
+      <div class="offer-text">
+        <div class="offer-subtitle">
+        <span class="offer-head">AU Credit Cards - 20% Off on Movie Ticket</span>
+      </div>
+      <div class="offer-footer"><span class="vail-date"><span class="text-muted">Valid till:</span> Mon, Sep 30, 2024</span>
+        <button class="view-btn">View</button>
+      </div>
+      </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function f(){
+  var x = document.querySelector(".drop-down");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+//select Moive
+var selectField = document.getElementById("selectField");
+  var selectText = document.getElementById("selectText");
+  var options = document.getElementsByClassName("options");
+  var list = document.getElementById("list");
+   
+  selectField.onclick = function(){
+  list.classList.toggle("hide");
+  }
+  for (option of options) {
+  option.onclick = function() {
+  selectText.innerHTML = this.textContent;
+  list.classList.toggle("hide");
+    }
+  }
+  //select Date
+  var selectField1 = document.getElementById("selectField1");
+  var selectDate = document.getElementById("selectDate");
+  var optionsDate = document.getElementsByClassName("optionsDate");
+  var listDate = document.getElementById("listDate");
+   
+  selectField1.onclick = function(){
+  listDate.classList.toggle("hide");
+  }
+  for (optionDate of optionsDate) {
+  optionDate.onclick = function() {
+  selectDate.innerHTML = this.textContent;
+  listDate.classList.toggle("hide");
+    }
+  }
+  //select Cinema
+  var selectField2 = document.getElementById("selectField2");
+  var selectCinema = document.getElementById("selectCinema");
+  var optionsCinema = document.getElementsByClassName("optionsCinema");
+  var listCinema = document.getElementById("listCinema");
+   
+  selectField2.onclick = function(){
+  listCinema.classList.toggle("hide");
+  }
+  for (optionCinema of optionsCinema) {
+  optionCinema.onclick = function() {
+  selectCinema.innerHTML = this.textContent;
+  listCinema.classList.toggle("hide");
+    }
+  }
+  //selectTiming
+  var selectField3 = document.getElementById("selectField3");
+  var selectTiming = document.getElementById("selectTiming");
+  var optionsTime = document.getElementsByClassName("optionsTime");
+  var listTiming = document.getElementById("listTiming");
+   
+  selectField3.onclick = function(){
+  listTiming.classList.toggle("hide");
+  }
+  for (optionTime of optionsTime) {
+  optionTime.onclick = function() {
+  selectTiming.innerHTML = this.textContent;
+  listTiming.classList.toggle("hide");
+    }
+  }
+</script>
